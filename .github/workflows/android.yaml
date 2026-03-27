@@ -28,7 +28,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Build
+      - name: Build API
+        run: cd src && ./gradlew :api:build --stacktrace
+
+      - name: Build UI
         run: cd src && ./gradlew :ui:assembleDebug --stacktrace
 
   style:
