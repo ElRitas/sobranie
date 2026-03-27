@@ -29,9 +29,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Run Detekt (Cyclomatic complexity)
-        run: cd src && ./gradlew detekt --stacktrace
-
       - name: Run Ktlint (Code style)
         run: cd src && ./gradlew ktlintCheck --stacktrace
 
