@@ -58,7 +58,7 @@ jobs:
         run: cd src && ./gradlew ktlintCheck --stacktrace
 
   tests:
-    needs: lint
+    needs: style
     runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
