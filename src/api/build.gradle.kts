@@ -10,7 +10,6 @@ application {
     mainClass.set("com.example.app.ApplicationKt")
 }
 
-
 dependencies {
     implementation(project(":domain"))
     implementation(project(":data"))
