@@ -30,13 +30,13 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Run Detekt (Cyclomatic complexity)
-        run: cd library_app && ./gradlew detekt --stacktrace
+        run: cd src && ./gradlew detekt --stacktrace
 
       - name: Run Ktlint (Code style)
-        run: cd library_app && ./gradlew ktlintCheck --stacktrace
+        run: cd src && ./gradlew ktlintCheck --stacktrace
 
       - name: Unit Tests
-        run: cd library_app && ./gradlew test
+        run: cd src && ./gradlew test
 
       - name: Integration Tests
-        run: cd library_app && ./gradlew integrationTest
+        run: cd src && ./gradlew integrationTest
