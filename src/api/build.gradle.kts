@@ -10,34 +10,6 @@ application {
     mainClass.set("com.example.app.ApplicationKt")
 }
 
-sourceSets {
-    create("e2eTest") {
-        kotlin.srcDir("src/e2eTest/kotlin")
-    }
-}
-
-idea {
-    module {
-        sourceSets.named("e2eTest") {
-            testSources.from(this.kotlin.srcDirs)
-        }
-    }
-}
-
-configurations.named("e2eTestImplementation") {
-    extendsFrom(configurations["testImplementation"])
-}
-configurations.named("e2eTestRuntimeOnly") {
-    extendsFrom(configurations["testRuntimeOnly"])
-}
-
-tasks.register<Test>("e2eTest") {
-    description = "Runs E2E tests."
-    group = "verification"
-    testClassesDirs = sourceSets["e2eTest"].output.classesDirs
-    classpath = sourceSets["e2eTest"].runtimeClasspath
-    useJUnitPlatform()
-}
 
 dependencies {
     implementation(project(":domain"))
@@ -72,21 +44,21 @@ dependencies {
     implementation(libs.hikariCP)
 
     // Тестирование
-    "e2eTestImplementation"(kotlin("test"))
-    "e2eTestImplementation"(libs.ktor.server.test.host)
+    testImplementation(kotlin("test"))
+    testImplementation(libs.ktor.server.test.host)
 
     // Тестовые контейнеры
-    "e2eTestImplementation"(libs.postgresql)
-    "e2eTestImplementation"(libs.testcontainers)
-    "e2eTestImplementation"(libs.testcontainers.postgresql)
+    testImplementation(libs.postgresql)
+    testImplementation(libs.testcontainers)
+    testImplementation(libs.testcontainers.postgresql)
 
     // Клиент Ktor
-    "e2eTestImplementation"(libs.ktor.client.core)
-    "e2eTestImplementation"(libs.ktor.client.content.negotiation)
-    "e2eTestImplementation"(libs.ktor.serialization.kotlinx.json)
-    "e2eTestImplementation"(project(":api"))
+    testImplementation(libs.ktor.client.core)
+    testImplementation(libs.ktor.client.content.negotiation)
+    testImplementation(libs.ktor.serialization.kotlinx.json)
+    testImplementation(project(":api"))
 
     // JUnit 5
-    "e2eTestImplementation"(libs.junit.jupiter.api)
-    "e2eTestRuntimeOnly"(libs.junit.jupiter.engine)
+    testImplementation(libs.junit.jupiter.api)
+    testRuntimeOnly(libs.junit.jupiter.engine)
 }

@@ -31,8 +31,6 @@ dependencies {
     testImplementation(libs.testcontainers)
     testImplementation(libs.testcontainers.postgresql)
 
-    // allure
-    testImplementation(libs.allure.junit5)
     testImplementation(libs.junit.jupiter.api)
     testRuntimeOnly(libs.junit.jupiter.engine)
 }
