@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[hook] Running detekt..."
+./gradlew detekt
+
+echo "[hook] Running ktlintCheck..."
+./gradlew ktlintCheck
+
+echo "[hook] Running halstead..."
+./gradlew halstead
+
+echo "[hook] All checks passed."
