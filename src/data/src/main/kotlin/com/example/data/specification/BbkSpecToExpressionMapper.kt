@@ -1,6 +1,6 @@
-package com.example.data.local.specification
+package com.example.data.specification
 
-import com.example.data.local.entity.BbkEntity
+import com.example.data.entity.BbkEntity
 import com.example.domain.model.BbkModel
 import com.example.domain.specification.AndSpecification
 import com.example.domain.specification.Specification

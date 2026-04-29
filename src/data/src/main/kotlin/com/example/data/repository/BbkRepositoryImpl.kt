@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.BbkEntity
-import com.example.data.local.mapping.BbkMapper
-import com.example.data.local.specification.BbkSpecToExpressionMapper
+import com.example.data.entity.BbkEntity
+import com.example.data.mapping.BbkMapper
+import com.example.data.specification.BbkSpecToExpressionMapper
 import com.example.domain.model.BbkModel
 import com.example.domain.repository.BbkRepository
 import com.example.domain.specification.Specification

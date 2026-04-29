@@ -1,11 +1,11 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.AuthorEntity
-import com.example.data.local.entity.BookAuthorCrossRef
-import com.example.data.local.entity.BookEntity
-import com.example.data.local.mapping.AuthorMapper
-import com.example.data.local.mapping.BookMapper
-import com.example.data.local.specification.BookSpecToExpressionMapper
+import com.example.data.entity.AuthorEntity
+import com.example.data.entity.BookAuthorCrossRef
+import com.example.data.entity.BookEntity
+import com.example.data.mapping.AuthorMapper
+import com.example.data.mapping.BookMapper
+import com.example.data.specification.BookSpecToExpressionMapper
 import com.example.domain.model.AuthorModel
 import com.example.domain.model.BookModel
 import com.example.domain.repository.BookRepository

@@ -1,6 +1,6 @@
-package com.example.data.local.mapping
+package com.example.data.mapping
 
-import com.example.data.local.entity.QueueEntity
+import com.example.data.entity.QueueEntity
 import com.example.domain.model.QueueModel
 import kotlinx.datetime.toJavaInstant
 import kotlinx.datetime.toKotlinInstant

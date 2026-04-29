@@ -1,16 +1,16 @@
 package com.example.data
 
-import com.example.data.local.entity.ApuEntity
-import com.example.data.local.entity.AuthorEntity
-import com.example.data.local.entity.BbkEntity
-import com.example.data.local.entity.BookAuthorCrossRef
-import com.example.data.local.entity.BookEntity
-import com.example.data.local.entity.IssuanceEntity
-import com.example.data.local.entity.PublisherEntity
-import com.example.data.local.entity.QueueEntity
-import com.example.data.local.entity.ReservationEntity
-import com.example.data.local.entity.UserEntity
-import com.example.data.local.entity.UserFavoriteCrossRef
+import com.example.data.entity.ApuEntity
+import com.example.data.entity.AuthorEntity
+import com.example.data.entity.BbkEntity
+import com.example.data.entity.BookAuthorCrossRef
+import com.example.data.entity.BookEntity
+import com.example.data.entity.IssuanceEntity
+import com.example.data.entity.PublisherEntity
+import com.example.data.entity.QueueEntity
+import com.example.data.entity.ReservationEntity
+import com.example.data.entity.UserEntity
+import com.example.data.entity.UserFavoriteCrossRef
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import org.jetbrains.exposed.sql.Database

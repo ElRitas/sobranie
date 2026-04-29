@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.ApuEntity
-import com.example.data.local.mapping.ApuMapper
-import com.example.data.local.specification.ApuSpecToExpressionMapper
+import com.example.data.entity.ApuEntity
+import com.example.data.mapping.ApuMapper
+import com.example.data.specification.ApuSpecToExpressionMapper
 import com.example.domain.model.ApuModel
 import com.example.domain.repository.ApuRepository
 import com.example.domain.specification.Specification

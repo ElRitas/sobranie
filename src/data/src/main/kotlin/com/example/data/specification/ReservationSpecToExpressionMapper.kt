@@ -1,6 +1,6 @@
-package com.example.data.local.specification
+package com.example.data.specification
 
-import com.example.data.local.entity.ReservationEntity
+import com.example.data.entity.ReservationEntity
 import com.example.domain.model.ReservationModel
 import com.example.domain.specification.AndSpecification
 import com.example.domain.specification.Specification

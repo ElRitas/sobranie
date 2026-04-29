@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.BookEntity
-import com.example.data.local.entity.UserFavoriteCrossRef
-import com.example.data.local.mapping.BookMapper
+import com.example.data.entity.BookEntity
+import com.example.data.entity.UserFavoriteCrossRef
+import com.example.data.mapping.BookMapper
 import com.example.domain.model.BookModel
 import com.example.domain.repository.UserFavoriteRepository
 import kotlinx.coroutines.Dispatchers

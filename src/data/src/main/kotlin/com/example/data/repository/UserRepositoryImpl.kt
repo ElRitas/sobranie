@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.UserEntity
-import com.example.data.local.mapping.UserMapper
-import com.example.data.local.specification.UserSpecToExpressionMapper
+import com.example.data.entity.UserEntity
+import com.example.data.mapping.UserMapper
+import com.example.data.specification.UserSpecToExpressionMapper
 import com.example.domain.model.UserModel
 import com.example.domain.repository.UserRepository
 import com.example.domain.specification.Specification

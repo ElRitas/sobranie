@@ -1,6 +1,6 @@
-package com.example.data.local.mapping
+package com.example.data.mapping
 
-import com.example.data.local.entity.BookEntity
+import com.example.data.entity.BookEntity
 import com.example.domain.model.AuthorModel
 import com.example.domain.model.BookModel
 import org.jetbrains.exposed.dao.id.EntityID

@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.AuthorEntity
-import com.example.data.local.mapping.AuthorMapper
-import com.example.data.local.specification.AuthorSpecToExpressionMapper
+import com.example.data.entity.AuthorEntity
+import com.example.data.mapping.AuthorMapper
+import com.example.data.specification.AuthorSpecToExpressionMapper
 import com.example.domain.model.AuthorModel
 import com.example.domain.repository.AuthorRepository
 import com.example.domain.specification.Specification

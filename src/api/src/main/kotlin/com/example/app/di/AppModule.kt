@@ -1,16 +1,16 @@
 package com.example.app.di
 
-import com.example.data.local.DatabaseBuilder
-import com.example.data.local.repository.ApuRepositoryImpl
-import com.example.data.local.repository.AuthorRepositoryImpl
-import com.example.data.local.repository.BbkRepositoryImpl
-import com.example.data.local.repository.BookRepositoryImpl
-import com.example.data.local.repository.IssuanceRepositoryImpl
-import com.example.data.local.repository.PublisherRepositoryImpl
-import com.example.data.local.repository.QueueRepositoryImpl
-import com.example.data.local.repository.ReservationRepositoryImpl
-import com.example.data.local.repository.UserFavoriteRepositoryImpl
-import com.example.data.local.repository.UserRepositoryImpl
+import com.example.data.DatabaseBuilder
+import com.example.data.repository.ApuRepositoryImpl
+import com.example.data.repository.AuthorRepositoryImpl
+import com.example.data.repository.BbkRepositoryImpl
+import com.example.data.repository.BookRepositoryImpl
+import com.example.data.repository.IssuanceRepositoryImpl
+import com.example.data.repository.PublisherRepositoryImpl
+import com.example.data.repository.QueueRepositoryImpl
+import com.example.data.repository.ReservationRepositoryImpl
+import com.example.data.repository.UserFavoriteRepositoryImpl
+import com.example.data.repository.UserRepositoryImpl
 import com.example.domain.repository.ApuRepository
 import com.example.domain.repository.AuthorRepository
 import com.example.domain.repository.BbkRepository
