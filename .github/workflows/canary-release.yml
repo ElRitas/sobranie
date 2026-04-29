@@ -24,7 +24,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: cd src && ./gradlew build
 
       - name: Generate canary tag
         id: tag
@@ -48,4 +48,4 @@ jobs:
             - Коммит: ${{ github.sha }}
           files: build/libs/*.jar 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
