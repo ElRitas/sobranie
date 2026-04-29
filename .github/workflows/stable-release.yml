@@ -24,11 +24,17 @@ jobs:
       - name: Build with Gradle
         run: cd src && ./gradlew build
 
+      - name: Generate tag
+        id: tag
+        run: |
+          TAG="v$(date +'%Y%m%d-%H%M%S')"
+          echo "tag_name=$TAG" >> $GITHUB_OUTPUT
+
       - name: Create Stable Release
         uses: softprops/action-gh-release@v2
         with:
-          name: "Stable Release ${{ github.run_number }}"
-          tag_name: "v$(date +'%Y%m%d-%H%M%S')"
+          tag_name: ${{ steps.tag.outputs.tag_name }}
+          name: "Stable Release ${{ steps.tag.outputs.tag_name }}"
           make_latest: true
           body: |
             ### Стабильный релиз
