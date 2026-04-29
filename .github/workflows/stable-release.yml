@@ -28,7 +28,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: "Stable Release ${{ github.run_number }}"
-          tag_name: "v${{ github.run_number }}"
+          tag_name: "v$(date +'%Y%m%d-%H%M%S')"
           make_latest: true
           body: |
             ### Стабильный релиз
