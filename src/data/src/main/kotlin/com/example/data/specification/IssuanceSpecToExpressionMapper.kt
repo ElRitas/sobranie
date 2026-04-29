@@ -1,6 +1,6 @@
-package com.example.data.local.specification
+package com.example.data.specification
 
-import com.example.data.local.entity.IssuanceEntity
+import com.example.data.entity.IssuanceEntity
 import com.example.domain.model.IssuanceModel
 import com.example.domain.specification.AndSpecification
 import com.example.domain.specification.Specification

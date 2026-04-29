@@ -1,6 +1,6 @@
-package com.example.data.local.mapping
+package com.example.data.mapping
 
-import com.example.data.local.entity.UserEntity
+import com.example.data.entity.UserEntity
 import com.example.domain.enums.UserRole
 import com.example.domain.model.UserModel
 import org.jetbrains.exposed.dao.id.EntityID

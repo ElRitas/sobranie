@@ -1,6 +1,6 @@
-package com.example.data.local.mapping
+package com.example.data.mapping
 
-import com.example.data.local.entity.ReservationEntity
+import com.example.data.entity.ReservationEntity
 import com.example.domain.model.ReservationModel
 import kotlinx.datetime.toJavaLocalDate
 import kotlinx.datetime.toKotlinLocalDate

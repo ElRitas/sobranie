@@ -1,6 +1,6 @@
-package com.example.data.local.specification
+package com.example.data.specification
 
-import com.example.data.local.entity.PublisherEntity
+import com.example.data.entity.PublisherEntity
 import com.example.domain.model.PublisherModel
 import com.example.domain.specification.AndSpecification
 import com.example.domain.specification.Specification

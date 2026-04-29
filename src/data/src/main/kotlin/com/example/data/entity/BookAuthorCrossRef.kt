@@ -1,4 +1,4 @@
-package com.example.data.local.entity
+package com.example.data.entity
 
 import org.jetbrains.exposed.sql.ReferenceOption
 import org.jetbrains.exposed.sql.Table

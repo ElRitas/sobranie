@@ -1,6 +1,6 @@
-package com.example.data.local.mapping
+package com.example.data.mapping
 
-import com.example.data.local.entity.BbkEntity
+import com.example.data.entity.BbkEntity
 import com.example.domain.model.BbkModel
 import org.jetbrains.exposed.dao.id.EntityID
 import org.jetbrains.exposed.sql.ResultRow

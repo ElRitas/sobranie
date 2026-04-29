@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.IssuanceEntity
-import com.example.data.local.mapping.IssuanceMapper
-import com.example.data.local.specification.IssuanceSpecToExpressionMapper
+import com.example.data.entity.IssuanceEntity
+import com.example.data.mapping.IssuanceMapper
+import com.example.data.specification.IssuanceSpecToExpressionMapper
 import com.example.domain.model.IssuanceModel
 import com.example.domain.repository.IssuanceRepository
 import com.example.domain.specification.Specification

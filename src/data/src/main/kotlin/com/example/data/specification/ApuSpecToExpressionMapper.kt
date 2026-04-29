@@ -1,6 +1,6 @@
-package com.example.data.local.specification
+package com.example.data.specification
 
-import com.example.data.local.entity.ApuEntity
+import com.example.data.entity.ApuEntity
 import com.example.domain.model.ApuModel
 import com.example.domain.specification.AndSpecification
 import com.example.domain.specification.Specification

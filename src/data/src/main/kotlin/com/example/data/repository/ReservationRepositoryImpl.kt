@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.ReservationEntity
-import com.example.data.local.mapping.ReservationMapper
-import com.example.data.local.specification.ReservationSpecToExpressionMapper
+import com.example.data.entity.ReservationEntity
+import com.example.data.mapping.ReservationMapper
+import com.example.data.specification.ReservationSpecToExpressionMapper
 import com.example.domain.model.ReservationModel
 import com.example.domain.repository.ReservationRepository
 import com.example.domain.specification.Specification

@@ -1,8 +1,8 @@
-package com.example.data.local.repository
+package com.example.data.repository
 
-import com.example.data.local.entity.QueueEntity
-import com.example.data.local.mapping.QueueMapper
-import com.example.data.local.specification.QueueSpecToExpressionMapper
+import com.example.data.entity.QueueEntity
+import com.example.data.mapping.QueueMapper
+import com.example.data.specification.QueueSpecToExpressionMapper
 import com.example.domain.model.QueueModel
 import com.example.domain.repository.QueueRepository
 import com.example.domain.specification.Specification
